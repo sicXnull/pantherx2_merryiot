@@ -1,4 +1,4 @@
-## SSH Access for Browan/Merryiot
+## SSH Access for PantherX2 Running Browan/Merryiot Firmware
 
 ## Initial Access
 
