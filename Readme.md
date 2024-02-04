@@ -22,7 +22,8 @@ Generate a SSH key.
 - Update Packages `sudo apt update` 
 - Install Nano `sudo apt install nano`
 - Navigate to ssh config file `sudo nano /etc/ssh/sshd_config` 
-- Change `PasswordAuthentication` from `no` to `yes`. Optional - Change port to 22 if you desire
+- Change `PasswordAuthentication` from `no` to `yes`. Optional - Change port to 22 if you desire. Save file
+- Restart SSH `sudo systemctl restart ssh`
 - Modify file permissions so it is not overwritten by OTA updates `sudo chattr +i /etc/ssh/sshd_config`
 - Set root password. `sudo passwd root`
 - Modify file permissions so it is not overwritten `sudo chattr +i /etc/passwd /etc/shadow`
