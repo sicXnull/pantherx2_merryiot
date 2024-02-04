@@ -19,6 +19,8 @@ Generate a SSH key.
 
 ## How to Keep SSH Access After Updates
 
+- Update Packages `sudo apt update` 
+- Install Nano `sudo apt install nano`
 - Navigate to ssh config file `sudo nano /etc/ssh/sshd_config` 
 - Change `PasswordAuthentication` from `no` to `yes`. Optional - Change port to 22 if you desire
 - Modify file permissions so it is not overwritten by OTA updates `sudo chattr +i /etc/ssh/sshd_config`
