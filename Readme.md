@@ -42,3 +42,7 @@ Generate a SSH key.
 - Save file
 - Prevent updates from deleting this fix `sudo chattr +i /etc/network/if-pre-up.d/change_mac_address`
 - Reboot
+
+## Force OTA Update
+
+To update to the latest firmware, ensure all of the above has been completed. Then run ``/usr/local/sbin/gw_ota stable``
