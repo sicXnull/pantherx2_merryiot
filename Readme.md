@@ -1,6 +1,11 @@
-## SSH Access for PantherX2 Running Browan/Merryiot Firmware
+## How To: PantherX2 Running Browan/Merryiot Firmware
 
-## Initial Access
+ - Download Balena Etcher
+   [Download](https://etcher.balena.io/#download-etcher)
+ - Download Browan image  [Download](https://github.com/sicXnull/pantherx2_merryiot/releases/tag/1.0)
+ - Flash Browan image to SSD Card
+
+## SSH Access
 
 Generate a SSH key. 
 [Windows](https://www.techtarget.com/searchsecurity/tutorial/How-to-use-PuTTY-for-SSH-key-based-authentication) 
