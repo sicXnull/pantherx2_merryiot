@@ -27,3 +27,18 @@ Generate a SSH key.
 - Modify file permissions so it is not overwritten by OTA updates `sudo chattr +i /etc/ssh/sshd_config`
 - Set root password. `sudo passwd root`
 - Modify file permissions so it is not overwritten `sudo chattr +i /etc/passwd /etc/shadow`
+
+## How to fix MAC Address
+
+- For some reason, the browan image comes hardcoded with a MAC address different than your machines. To correct this
+  - Note your device MAC address
+- Install macchanger `sudo apt-get install macchanger`
+- Create the following file by running `sudo nano /etc/network/if-pre-up.d/change_mac_address`
+  - Paste the following:
+ ``` #!/bin/bash
+    #!/bin/bash
+    /usr/bin/macchanger -m <your:mac:address> eth0
+```
+- Save file
+- Prevent updates from deleting this fix `sudo chattr +i /etc/network/if-pre-up.d/change_mac_address`
+- Reboot
