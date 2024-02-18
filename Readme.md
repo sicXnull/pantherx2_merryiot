@@ -45,6 +45,7 @@ Generate a SSH key.
     /usr/bin/macchanger -m <your:mac:address> eth0
 ```
 - Save file
+- Make script executable `sudo chmod +x /etc/network/if-pre-up.d/change_mac_address`
 - Prevent updates from deleting this fix `sudo chattr +i /etc/network/if-pre-up.d/change_mac_address`
 - Reboot
 
