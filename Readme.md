@@ -32,7 +32,7 @@ Generate a SSH key.
 
 - For some reason, the browan image comes hardcoded with a MAC address different than your machines. To correct this
   - Note your device MAC address
-- Install macchanger `sudo apt-get install macchanger`
+- Install macchanger `sudo apt update && sudo apt-get install macchanger`
 - Create the following file by running `sudo nano /etc/network/if-pre-up.d/change_mac_address`
   - Paste the following:
  ``` #!/bin/bash
