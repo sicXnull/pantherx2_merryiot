@@ -42,7 +42,7 @@ Generate a SSH key.
   - Paste the following:
  ``` #!/bin/bash
     #!/bin/bash
-    /usr/bin/macchanger -m <your:mac:address> eth0
+    /usr/bin/macchanger -m your:mac:address eth0
 ```
 - Save file
 - Make script executable `sudo chmod +x /etc/network/if-pre-up.d/change_mac_address`
