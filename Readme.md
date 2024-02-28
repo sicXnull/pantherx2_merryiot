@@ -40,10 +40,19 @@ Generate a SSH key.
 - Install macchanger `sudo apt update && sudo apt-get install macchanger`
 - Select No to changing MAC automatically
 - Create the following file by running `sudo nano /etc/network/if-pre-up.d/change_mac_address`
-  - Paste the following:
+  - Paste the following (be sure to change < your:mac:address >):
  ``` #!/bin/bash
-    #!/bin/bash
-    /usr/bin/macchanger -m your:mac:address eth0
+#!/bin/bash
+
+# Log file path
+LOG_FILE="/var/log/change_mac_address.log"
+
+/usr/bin/macchanger -m your:mac:address eth0 >> "$LOG_FILE" 2>&1
+
+# Check the exit status of the macchanger command
+if [ $? -ne 0 ]; then
+    echo "Failed to change MAC address. See $LOG_FILE for details." >&2
+fi
 ```
 - Save file
 - Make script executable `sudo chmod +x /etc/network/if-pre-up.d/change_mac_address`
