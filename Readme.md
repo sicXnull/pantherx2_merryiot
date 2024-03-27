@@ -3,7 +3,7 @@
  - Download Balena Etcher
    [Download](https://etcher.balena.io/#download-etcher)
  - Download Browan image  [Download](https://github.com/sicXnull/pantherx2_merryiot/releases/tag/1.0)
- - Flash Browan image to SSD Card
+ - Flash Browan image to SD Card
 
 ## SSH Access
 
