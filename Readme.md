@@ -63,7 +63,3 @@ fi
 
 To update to the latest firmware, ensure all of the above has been completed. Then run ``/usr/local/sbin/gw_ota stable``
 
-
-## Crankk
-
-To install Crankk, follow directions here https://github.com/sicXnull/crankk-merryiot
